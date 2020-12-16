@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shape Seeker</title>
-    <link type="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css\style.css" />
 </head>
 <body>
-    <p>Hi</p>
+    <canvas id="canvas"></canvas>
+    <h1>Welcome. This webpage is designed using the javascript library <a href="https://interactjs.io/">'Interactjs'</a></h1>
+    <h2>It allows you to manipulate objects including: dragging, dropping, resizing and even supports multi-touch gestures for modern browsers and devices.</h2>
+
+    <p>Clicking the button below will allow you to play a small matching game with a twist.</p>
+    <p>Using your curser scratch away the color until you find some shapes.</p>
+    <p>Two shapes will be identical. If you drag and drop them together the shapes and color will change, and you start again.</p>
+    <p>One of the identical shapes is a key and the other is a lock. The lock will have a border after you find it.</p>
+    <button id="beginSeeker">Shape Seeker</button>
     <div class="background">
-        <div class="items">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
+        <div class="items"></div>
     </div>
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js\script.js"></script>
 </body>
 </html>
