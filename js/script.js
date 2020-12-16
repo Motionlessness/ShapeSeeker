@@ -78,7 +78,7 @@ function createShapes(){
 canvas.addEventListener('mousemove', (e) => {
     ctx.beginPath();
     ctx.arc(mouse.x, mouse.y, 20, 0, Math.PI * 5, false);
-    ctx.fillStyle = 'rgba(250,250,250,.5)';
+    ctx.fillStyle = 'rgba(250,250,250,.55)';
     ctx.fill();
 });
 
